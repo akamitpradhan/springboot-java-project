@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class StartApplication {
 
-    @RequestMapping("/")
+    @GetMapping("/")
     public String index(final Model model) {
         model.addAttribute("title", "This is a SpringBoot Static Web Application");
         model.addAttribute("msg", "Application Is Deployed To Kuberneets");
