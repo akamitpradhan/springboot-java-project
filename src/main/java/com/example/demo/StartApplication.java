@@ -15,7 +15,7 @@ public class StartApplication {
     public String index(final Model model) {
         model.addAttribute("title", "This is a SpringBoot Static Web Application");
         model.addAttribute("msg", "Application Is Deployed To Kuberneets");
-        return "index";
+        return "index, hello from forst springboot ";
     }
 
     public static void main(String[] args) {
