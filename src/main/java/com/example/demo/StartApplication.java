@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-// @Controller
+@RestController
 public class StartApplication {
 
-    @GetMapping("/")
+    @RequestMapping("/")
     public String index(final Model model) {
         model.addAttribute("title", "This is a SpringBoot Static Web Application");
         model.addAttribute("msg", "Application Is Deployed To Kuberneets");
